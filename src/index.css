@@ -4,25 +4,27 @@
 
 @layer components {
     ion-icon {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         transition: 0.2s ease-in-out;
 
         &:hover {
-            color: #0284c7;
+            color: #0ea5e9;
+        }
+    }
+    .arrow-down {
+        ion-icon {
+            font-size: 6rem;
+            opacity: 20%;
         }
     }
     .dark {
         color: white;
-    }
-    .shake {
-        animation: shake 1s ease-in-out infinite alternate;
-    }
-    @keyframes shake {
-        50% {
-            transform: rotateZ( -10deg );
+
+        ion-icon:hover {
+            color: #fb923c;
         }
-        to {
-            transform: rotateZ( 10deg );
-        }
-    } 
+    }
+    a, button {
+        pointer-events: all;
+    }
 }
