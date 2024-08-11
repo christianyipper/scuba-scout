@@ -1,12 +1,16 @@
 import Card from '../Card'
 import Ocean from '../../img/ocean.jpg'
 
-const Section5 = ( { view, heading, animation1, animation2, animation3 } ) => {
+const Section5 = ( { 
+    view, heading, 
+    animation1, animation2, animation3,
+    spin1, spin2, spin3
+} ) => {
     return (
         <section className={`
         ${ view }
         absolute w-full h-screen
-        grid grid-cols-10 grid-rows-12 gap-4
+        grid grid-cols-10 grid-rows-12 gap-6
         justify-center items-start
         overflow-hidden pointer-events-none
         `}>
@@ -14,15 +18,16 @@ const Section5 = ( { view, heading, animation1, animation2, animation3 } ) => {
             className={`
             ${ heading }
             col-start-1 col-end-11 row-start-3
-            text-4xl text-center
+            text-center
             transition-all duration-500 ease-in-out
             `}>Pricing
             </h2>
             <Card
             layout='
-            col-start-3 col-end-5 row-start-5 
+            col-start-3 col-end-5 row-start-4 
             border-black/15 dark:border-white/15'
             animation={ animation1 }
+            spin={ spin1 }
             featured='hidden'
             title='basic'
             price='10'
@@ -36,9 +41,11 @@ const Section5 = ( { view, heading, animation1, animation2, animation3 } ) => {
             />
             <Card
             layout='
-            col-start-5 col-end-7 row-start-5 
-            bg-sky-500/20 dark:bg-orange-400/20 border-sky-500 dark:border-orange-400'
+            col-start-5 col-end-7 row-start-4
+            bg-white dark:bg-black border-white dark:border-black
+            invert'
             animation={ animation2 }
+            spin={ spin2 }
             title='pro'
             price='16'
             item1='Up to 250m distance'
@@ -51,9 +58,10 @@ const Section5 = ( { view, heading, animation1, animation2, animation3 } ) => {
             />
             <Card
             layout='
-            col-start-7 col-end-9 row-start-5
+            col-start-7 col-end-9 row-start-4
             border-black/15 dark:border-white/15'
             animation={ animation3 }
+            spin={ spin3 }
             featured='hidden'
             title='ultimate'
             price='24'

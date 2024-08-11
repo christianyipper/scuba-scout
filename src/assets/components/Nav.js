@@ -6,10 +6,11 @@ const Nav = ( { action, pricing, about, faq } ) => {
         <nav className='
         fixed w-full h-16 z-50 pr-6
         grid grid-cols-12 gap-4 
-        bg-black/10 dark:bg-white/15 white
+        bg-white/0 dark:bg-black/0 white
+        backdrop-blur-md
         pointer-events-none
         '>
-            <a href='' className='
+            <a href='#section1' className='
             col-start-2 col-end-3 
             flex justify-start items-center
             '>
@@ -25,7 +26,7 @@ const Nav = ( { action, pricing, about, faq } ) => {
                         text="Pricing"
                         path="#section5"
                     />
-                    <div className={`${ pricing } w-1 h-1 bg-white rounded-xl bottom-2 absolute transition-all duration-500 ease-in-out`}></div>
+                    <div className={`${ pricing } w-1 h-1 bg-black dark:bg-white rounded-xl bottom-2 absolute transition-all duration-500 ease-in-out`}></div>
                 </div>
                 <div className='flex flex-col justify-center items-center'>
                     <Link
@@ -33,7 +34,7 @@ const Nav = ( { action, pricing, about, faq } ) => {
                         text="About"
                         path="#section2"
                     />
-                    <div className={`${ about } w-1 h-1 bg-white rounded-xl bottom-2 absolute transition-all duration-500 ease-in-out`}></div>
+                    <div className={`${ about } w-1 h-1 bg-black dark:bg-white rounded-xl bottom-2 absolute transition-all duration-500 ease-in-out`}></div>
                 </div>
                 <div className='flex flex-col justify-center items-center'>
                     <Link
@@ -41,7 +42,7 @@ const Nav = ( { action, pricing, about, faq } ) => {
                         text="FAQ"
                         path="#section6"
                     />
-                    <div className={`${ faq } w-1 h-1 bg-white rounded-xl bottom-2 absolute transition-all duration-500 ease-in-out`}></div>
+                    <div className={`${ faq } w-1 h-1 bg-black dark:bg-white rounded-xl bottom-2 absolute transition-all duration-500 ease-in-out`}></div>
                 </div>
             </div>
             <div className='

@@ -1,19 +1,19 @@
 import Button from "./Button"
 
 const Card = ( { 
-    layout, title, price, featured, animation,
+    layout, title, price, featured, animation, spin,
     item1, item2, item3, item4, item5, item6, item7,
     display1, display2, display3, display4, display5, display6, display7
 } ) => {
     return (
         <div className={`
-            ${ layout } ${ animation }
-            h-auto relative pt-4 pb-4 rounded-3xl
+            ${ layout } ${ animation } ${ spin }
+            h-auto relative pt-4 pb-4 rounded-3xl mt-8
             border-2
             transition-all duration-500 ease-in-out
             `}>
                 <div className={`${ featured } absolute -top-5 w-full flex justify-center items-center`}>
-                    <p className='text-center -mt-0 py-1 px-4 rounded-full font-bold bg-sky-500 dark:bg-orange-400'><span className='invert'>Most Popular</span></p>
+                    <p className='text-center -mt-0 py-1 px-4 rounded-full font-bold bg-black dark:bg-white border-2 border-white dark:border-black'><span className='invert'>Most Popular</span></p>
                 </div>
                 <h3 className='text-6xl font-black absolute top-16 -left-0 opacity-10'>{ title }</h3>
                 <p className='pl-4'>

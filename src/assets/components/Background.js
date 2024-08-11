@@ -12,7 +12,6 @@ const Background = ( { arrow } ) => {
             flex flex-col justify-center items-center
             arrow-down
             transition-all duration-500 ease-in-out
-            bg-red-900
             `}>
                 <span className='animate-bob'>
                     <ion-icon name="chevron-down-outline"></ion-icon>

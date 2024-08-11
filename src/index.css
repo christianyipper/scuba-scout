@@ -27,4 +27,13 @@
     a, button {
         pointer-events: all;
     }
+    h2 {
+        font-size: 2.25rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .delay-400 {
+        transition-delay: 400ms;
+    }
 }
