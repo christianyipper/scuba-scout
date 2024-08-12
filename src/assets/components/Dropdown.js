@@ -42,12 +42,12 @@ const Dropdown = ( { position, animation, itemAnimation } ) => {
                 <a
                     key={ index }
                     ref={(el) => (itemRef.current[index] = el)}
-                    className={`${ activeIndex === index ? 'invert bg-white dark:bg-black border-white dark:border-black' : '' }
+                    className={`${ activeIndex === index ? 'invert bg-white dark:bg-black hover:border-white/0 hover:dark:border-black/0' : '' }
                     ${ itemAnimation }
                     flex flex-col justify-start items-start
                     w-full opacity-0
                     overflow-hidden cursor-pointer rounded-3xl
-                    border-2 border-black/20 dark:border-white/20
+                    border-2 border-black/20 hover:border-sky-500 dark:border-white/20 hover:dark:border-orange-400
                     transition-all duration-500 ease-in-out                 
                     `}
                     onClick={ () => handleClick( index ) }

@@ -39,19 +39,25 @@
     p, a, li, ul {
         font-family: 'Nunito';
     }
+    .cubic {
+        transition-timing-function: cubic-bezier( 0.175, 0.885, 0.32, 1.5 );
+    }
     .delay-400 {
         transition-delay: 400ms;
     }
-    .dropdown-container a:nth-of-type( 5n + 2 ) {
+    .dropdown-container a:nth-of-type( 6n + 2 ) {
         animation-delay: 120ms;
     }
-    .dropdown-container a:nth-of-type( 5n + 3 ) {
+    .dropdown-container a:nth-of-type( 6n + 3 ) {
         animation-delay: 240ms;
     }
-    .dropdown-container a:nth-of-type( 5n + 4 ) {
+    .dropdown-container a:nth-of-type( 6n + 4 ) {
         animation-delay: 360ms;
     }
-    .dropdown-container a:nth-of-type( 5n + 5 ) {
+    .dropdown-container a:nth-of-type( 6n + 5 ) {
         animation-delay: 480ms;
+    }
+    .dropdown-container a:nth-of-type( 6n + 6 ) {
+        animation-delay: 600ms;
     }
 }
