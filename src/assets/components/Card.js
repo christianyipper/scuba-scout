@@ -16,9 +16,9 @@ const Card = ( {
                     <p className='text-center -mt-0 py-1 px-4 rounded-full font-bold bg-black dark:bg-white border-2 border-white dark:border-black'><span className='invert'>Most Popular</span></p>
                 </div>
                 <h3 className='text-6xl font-black absolute top-16 -left-0 opacity-10'>{ title }</h3>
-                <p className='pl-4'>
-                    <span className='text-6xl font-bold'>$</span>
-                    <span className='text-6xl font-bold'>{ price }</span>
+                <p className='pl-4 font-Rubik'>
+                    <span className='text-6xl font-semibold'>$</span>
+                    <span className='text-6xl font-semibold'>{ price }</span>
                     <span className='text-2xl'>/mo</span></p>
                 <p className='pl-4 text-lg pb-8'>{ title } plan</p>
                 <ul className='ml-9 list-disc'>

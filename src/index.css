@@ -27,13 +27,31 @@
     a, button {
         pointer-events: all;
     }
+    h1, h2, button {
+        font-family: 'Rubik';
+    }
     h2 {
         font-size: 2.25rem;
     }
     h3 {
         font-size: 1.5rem;
     }
+    p, a, li, ul {
+        font-family: 'Nunito';
+    }
     .delay-400 {
         transition-delay: 400ms;
+    }
+    .dropdown-container a:nth-of-type( 5n + 2 ) {
+        animation-delay: 120ms;
+    }
+    .dropdown-container a:nth-of-type( 5n + 3 ) {
+        animation-delay: 240ms;
+    }
+    .dropdown-container a:nth-of-type( 5n + 4 ) {
+        animation-delay: 360ms;
+    }
+    .dropdown-container a:nth-of-type( 5n + 5 ) {
+        animation-delay: 480ms;
     }
 }

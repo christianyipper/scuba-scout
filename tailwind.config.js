@@ -4,10 +4,15 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
+            fontFamily: {
+                'Rubik': ['Rubik', 'sans-serif'],
+                'Nunito': ['Nunito', 'sans-serif'],
+            },
             animation: {
                 'shake': 'shake 1s ease-in-out infinite alternate',
                 'bob': 'bob 3s ease-in-out infinite',
                 'spin': 'spin 0.5s ease-in-out alternate',
+                'fade': 'fade 0.5s ease-in-out forwards',
             },
             keyframes: {
                 shake: {
@@ -25,6 +30,10 @@ module.exports = {
                     '0%': { transform: 'rotateY( 0deg )' },
                     '50%': { transform: 'rotateY( 90deg )' },
                     '100%': { transform: 'rotateY( 0deg )' },
+                },
+                fade: {
+                    '0%': { transform: 'translateY( 100% )', opacity: '0' },
+                    '100%': { transform: 'translateY( 0 )', opacity: '100%' },
                 },
             },
         },

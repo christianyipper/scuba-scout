@@ -1,6 +1,6 @@
 
 import DiverBelowLight from '../../img/diver-deep-light.png';
-import DiverBelowDark from '../../img/diver-deep-dark.png';
+import DiverBelowDark from '../../img/diver-deep-dark2.png';
 
 import AboutTemplate from './AboutTemplate';
 
@@ -15,7 +15,7 @@ const Section3 = ( {
         photoPos='col-start-6 col-end-9 row-start-3'
 
         bodyPos='col-start-2 col-end-6 row-start-3'
-        heading='Oxygen Monitoring'
+        heading='Oxygen Monitoring System'
         headingAnimate={ headingAnimate }
         text="Safety is paramount for every dive. Scuba Scout meticulously monitors your oxygen levels and consumption, providing real-time data to ensure you stay within safe limits. By accurately calculating your remaining dive time based on oxygen usage, the app empowers you to make informed decisions and extend your underwater exploration with confidence. Additionally, it's intelligent decompression stop calculator utilizes GPS data to determine your depth and automatically calculates the necessary decompression stops based on established dive tables."
         textAnimate={ textAnimate }

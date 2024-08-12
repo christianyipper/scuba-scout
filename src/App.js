@@ -6,8 +6,11 @@ import Section2 from './assets/components/sections/Section2';
 import Section3 from './assets/components/sections/Section3';
 import Section4 from './assets/components/sections/Section4';
 import Section5 from './assets/components/sections/Section5';
+import Section6 from './assets/components/sections/Section6';
+
 import ScrollSnap from './assets/components/ScrollSnap';
 import Background from './assets/components/Background';
+import Foreground from './assets/components/Foreground';
 
 const App = () => {
     // === INTERSECTION OBSERVER ===
@@ -40,6 +43,29 @@ const App = () => {
         <main className={ `${darkMode ? 'dark' : ''} w-full h-screen` }>
             <Background
             arrow={ inView1 ? '' : 'opacity-0'}
+            />
+            <Foreground
+            step1={ inView1 ? 'opacity-100' : 'opacity-25'}
+            
+            step2={ inView2 ? 'opacity-100' : 'opacity-25'}
+            step2mark={ inView2 || inView3 || inView4 || inView5 || inView6 ? 'opacity-100' : 'opacity-25'}
+            link2='#section2'
+
+            step3={ inView3 ? 'opacity-100' : 'opacity-25'}
+            step3mark={ inView3 || inView4 || inView5 || inView6 ? 'opacity-100' : 'opacity-25'}
+            link3='#section3'
+
+            step4={ inView4 ? 'opacity-100' : 'opacity-25'}
+            step4mark={ inView4 || inView5 || inView6 ? 'opacity-100' : 'opacity-25'}
+            link4='#section4'
+
+            step5={ inView5 ? 'opacity-100' : 'opacity-25'}
+            step5mark={ inView5 || inView6 ? 'opacity-100' : 'opacity-25'}
+            link5='#section5'
+
+            step6={ inView6 ? 'opacity-100' : 'opacity-25'}
+            step6mark={ inView6 ? 'opacity-100' : 'opacity-25'}
+            link6='#section6'
             />
             <ScrollSnap
                 id1="section1"
@@ -101,11 +127,16 @@ const App = () => {
             view={ inView5 ? 'z-50' : 'z-0' }
             heading={ inView5 ? 'opacity-100' : 'opacity-0' }
             animation1={ inView5 ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0' }
-            animation2={ inView5 ? 'translate-y-0 opacity-100 delay-150' : 'translate-y-10 opacity-0 delay-150' }
-            animation3={ inView5 ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-10 opacity-0 delay-300' }
+            animation2={ inView5 ? 'translate-y-0 opacity-100 delay-150' : 'translate-y-10 opacity-0' }
+            animation3={ inView5 ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-10 opacity-0' }
             spin1={ darkMode ? 'animate-spin' : ''}
             spin2={ darkMode ? 'animate-spin animation-delay-150' : ''}
             spin3={ darkMode ? 'animate-spin animation-delay-300' : ''}
+            />
+            <Section6
+            view={ inView6 ? 'z-50' : 'z-0' }
+            animation={ inView6 ? 'opacity-100' : 'opacity-0' }
+            itemAnimation={ inView6 ? 'animate-fade' : '' }
             />
         </main>
     );

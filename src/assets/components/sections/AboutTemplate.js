@@ -27,9 +27,9 @@ const AboutTemplate = ( {
             ${ bodyPos }
             relative
             `}>
-                <h2 className={`${ headingAnimate } pb-4 transition-all duration-500 ease-in-out`}>{ heading }</h2>
+                <h2 className={`${ headingAnimate } pb-4 transition-all duration-500 ease-in-out font-Rubik`}>{ heading }</h2>
                 <p className={`${ textAnimate } text-lg transition-all duration-500 ease-in-out`}>{ text }</p>
-                <div className='flex flex-row justify-between items-center w-full h-full mt-12 px-4'>
+                <div className='flex flex-row justify-between items-center w-full h-full mt-12'>
                     <div className={`flex flex-col justify-center items-center transition-all duration-500 ease-in-out ${ featured1Animate }`}>
                         <h3 className=''>{ featured1 }</h3>
                         <p className='font-bold text-lg'>{ featuredText1 }</p>

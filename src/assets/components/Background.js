@@ -1,3 +1,5 @@
+import Progress from "./Progress"
+
 const Background = ( { arrow } ) => {
     return (
         <div className='
@@ -22,11 +24,6 @@ const Background = ( { arrow } ) => {
                 <span className='animate-bob animation-delay-400'>
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </span>
-            </div>
-            <div className={`
-            col-start-11 col-end-13
-            bg-red-900
-            `}>
             </div>
         </div>
     )

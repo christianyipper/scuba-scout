@@ -4,15 +4,12 @@ const ScrollSnap = ( {
     id3, reference3, display3,
     id4, reference4, display4,
     id5, reference5, display5,
-    id6, reference6, display6,
-    id7, reference7, display7,
-    id8, reference8, display8,
-    id9, reference9, display9
+    id6, reference6, display6
     } ) => {
 
     return (
         <section className='
-        absolute w-full h-screen top-0 z-50
+        absolute w-full h-screen top-0 z-40
         snap-mandatory snap-y overflow-y-scroll overflow-x-hidden
         '>
             <div id={ id1 } className='block relative w-full h-screen min-h-screen snap-start' ref={ reference1 }></div>
