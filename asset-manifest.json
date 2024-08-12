@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/scuba-scout/static/css/main.3bd3cff4.css",
-    "main.js": "/scuba-scout/static/js/main.150d6fff.js",
+    "main.css": "/scuba-scout/static/css/main.9a72117e.css",
+    "main.js": "/scuba-scout/static/js/main.c648007f.js",
     "static/media/Scuba-Scout-720p.mp4": "/scuba-scout/static/media/Scuba-Scout-720p.d8a725db55eb051397c7.mp4",
     "static/media/ocean.jpg": "/scuba-scout/static/media/ocean.682399cfb2e89a9360a2.jpg",
     "static/media/diver-deep-light.png": "/scuba-scout/static/media/diver-deep-light.af0520f21d586f1944d3.png",
@@ -11,11 +11,11 @@
     "static/media/map-light.png": "/scuba-scout/static/media/map-light.300138a642e18a223a74.png",
     "static/media/map-dark.png": "/scuba-scout/static/media/map-dark.16a65e9fe31db8a58541.png",
     "index.html": "/scuba-scout/index.html",
-    "main.3bd3cff4.css.map": "/scuba-scout/static/css/main.3bd3cff4.css.map",
-    "main.150d6fff.js.map": "/scuba-scout/static/js/main.150d6fff.js.map"
+    "main.9a72117e.css.map": "/scuba-scout/static/css/main.9a72117e.css.map",
+    "main.c648007f.js.map": "/scuba-scout/static/js/main.c648007f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bd3cff4.css",
-    "static/js/main.150d6fff.js"
+    "static/css/main.9a72117e.css",
+    "static/js/main.c648007f.js"
   ]
 }
